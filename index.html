@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Blue Summit.">
+  <title>Blue Summit</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./img/favicon.ico" />
+</head>
+<body>
+  <script>
+  // Wait for the entire page (including images) to load
+  window.addEventListener("load", () => {
+    const preloader = document.getElementById("preloader");
+    preloader.classList.add("fade-out");
+    setTimeout(() => preloader.style.display = "none", 600); // remove after fade
+  });
+</script>
+
+  <!-- Preloader -->
+<div id="preloader">
+  <div class="loader-content">
+    <img src="/img/bs_logo.png" alt="Loading..." class="loader-logo">
+    <div class="spinner"></div>
+  </div>
+</div>
+
+ <!-- Header -->
+<header>
+  <div class="container">
+    <div class="logo">
+      <img src="./img/bs_logo.png" alt="Blue Summit Logo" />
+    </div>
+
+    <!-- Hamburger Icon (for mobile) -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Navigation -->
+   <nav id="navbar">
+  <ul>
+    <li><a href="#home" class="active">HOME</a></li>
+    <li><a href="#about">ABOUT US</a></li>
+    <li><a href="#services">SERVICES</a></li>
+    <li><a href="contac us.html">CONTACT US</a></li>
+  </ul>
+</nav>
+
+  </div>
+</header>
+
+<!-- Small Script for Toggle -->
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar');
+
+  menuToggle.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+    menuToggle.classList.toggle('open');
+  });
+</script>
+
+
+
+<!-- ===== Hero Section ===== -->
+
+<section class="hero">
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content">
+    <h1>
+      BUILDING QUALITY.<br>
+      DELIVERING TRUST.
+    </h1>
+
+    <p>
+      Reliable Construction Solutions<br>
+      Residential & Commercial Projects
+    </p>
+
+    <div class="hero-buttons">
+      <a href="projects.html" class="btn btn-primary">View Projects</a>
+      <!-- <a href="#" class="btn btn-secondary"></a> -->
+    </div>
+  </div>
+</section>
+
+<!-- ===== About Us ===== -->
+ 
+<section id="about" class="about">
+  <div class="container about-wrapper">
+
+    <!-- LEFT CONTENT -->
+    <div class="about-content">
+
+      <div class="about-title">
+        <div class="title-text">
+          <h2>Our Portfolio </h2>
+          <span class="underline"></span>
+        </div>
+        <span class="title-line"></span>
+      </div>
+
+      <p>
+        Blue Summit is a trusted construction company delivering high-quality
+        residential and commercial projects. We combine expertise, innovation,
+        and commitment to ensure every project is completed to the highest
+        standards. Blue Summit LLC was established in 2023 with the key aim of
+        providing a turnkey construction solution.
+      </p>
+
+      <p>
+        From planning to execution, our team focuses on safety, sustainability,
+        and long-term value — building spaces that stand the test of time.
+      </p>
+
+      <!-- <a href="#services" class="about-btn">Our Services</a> -->
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="about-image">
+      <img src="./img/about.jpg" alt="About Blue Summit">
+    </div>
+
+  </div>
+</section>
+
+
+<section id="services" class="services">
+  <div class="container">
+
+    <!-- Section Title -->
+    <div class="section-title">
+      <h2>Services We Offer</h2>
+      <span></span>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="services-grid">
+
+      <!-- Service 1 -->
+      <div class="service-card">
+        <img src="./img/civil.jpg" alt="Residential Construction">
+        <div class="service-content">
+          <h3>Civil Construction</h3>
+          <p>
+            Blue Summit specializes in delivering high-quality, personalized construction solutions for residential and commercial projects.
+            With a dedicated team of experienced professionals.
+          </p>
+          <a href="services.html#civil" class="service-btn">Read More</a>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card">
+        <img src="./img/consultancy_service.jpg" alt="Commercial Construction">
+        <div class="service-content">
+          <h3>Consultancy Services</h3>
+          <p>
+           We have an in-house consultancy firm that can design your projects and obtain approval from the authorities. Furthermore, 
+           we have joint ventures with local and international consultants for large-scale projects.
+          </p>
+          <a href="services.html#consultancy" class="service-btn">Read More</a>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card">
+        <img src="./img/project_consultancy.jpg" alt="Project Management">
+        <div class="service-content">
+          <h3>Project Management and Consultancy</h3>
+          <p>
+              Blue Summit is your trusted partner in civil construction project management, 
+              with a proven track record of successfully delivering complex projects on time and within budget.
+          </p>
+          <a href="services.html#project" class="service-btn">Read More</a>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="service-card">
+        <img src="./img/renovation.jpg" alt="Renovation & Fit-Out">
+        <div class="service-content">
+          <h3>Renovation & Fit-Out</h3>
+          <p>
+           We restore, improve, and update structures and spaces—whether residential homes, commercial buildings, or public facilities. 
+           Renovations breathe new life into spaces, transforming them completely.
+          </p>
+          <a href="services.html#renovation" class="service-btn">Read More</a>
+        </div>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="service-card">
+        <img src="./img/interior _design.jpg" alt="MEP Services">
+        <div class="service-content">
+          <h3>Interior Design</h3>
+          <p>
+            Blue Summit LLC Interiors is a boutique interior design firm based in Muscat. 
+            Our team of designers specializes in blending modern aesthetics with each client’s personal design style.
+          </p>
+          <a href="services.html#interior" class="service-btn">Read More</a>
+        </div>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="service-card">
+        <img src="./img/smart_home.jpg" alt="Maintenance Services">
+        <div class="service-content">
+          <h3>Samrt Home Soultion & IOT</h3>
+          <p>
+            We offer comprehensive smart home solutions and IoT integration services, 
+            empowering homeowners to seamlessly control and automate their living spaces for enhanced convenience, comfort, and efficiency.
+          </p>
+          <a href="services.html#smart" class="service-btn">Read More</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="divisions" class="divisions">
+  <div class="container">
+
+    <!-- Section Title -->
+    <div class="section-title">
+      <h2>Divisions of Excellence</h2>
+      <span></span>
+    </div>
+
+    <!-- Divisions Grid -->
+    <div class="divisions-grid">
+
+      <div class="division-card">
+        <i class="fas fa-building"></i>
+        <h3>Information Technology</h3>
+        <p>
+        We are a team of energetic, result-driven young engineers delivering innovative 
+        solutions on time, guided by experienced directors with multi-industry expertise.
+        </p>
+      </div>
+
+      <div class="division-card">
+        <i class="fas fa-drafting-compass"></i>
+        <h3>Trading</h3>
+        <p>
+          Experience informed trading with our innovative platform, empowering investors with advanced tools, 
+          expert support, and every step toward their financial goals.
+        </p>
+      </div>
+
+      <div class="division-card">
+        <i class="fas fa-project-diagram"></i>
+        <h3>Real Estate Development and Leasing</h3>
+        <p>
+          Unlock the potential of prime real estate with our expert development and leasing 
+          services that maximize value and transform spaces into thriving destinations.
+        </p>
+      </div>
+
+      <div class="division-card">
+        <i class="fas fa-tools"></i>
+       <h3>Shipping And Logistics</h3>
+        <p>
+         Delivering reliable shipping and logistics solutions with efficiency, precision, and end-to-end supply chain expertise
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ <!-- Why us Section -->
+
+<section class="why-us">
+  <div class="why-top">
+    
+    <!-- LEFT CONTENT -->
+    <div class="why-left">
+      <h2>Why Choose Us?</h2>
+      <span class="why-underline"></span>
+
+      <div class="why-points">
+        <div class="point"><i class="fa fa-check"></i> Quality Craftsmanship</div>
+        <div class="point"><i class="fa fa-check"></i> On-Time & On-Budget</div>
+        <div class="point"><i class="fa fa-check"></i> Safety First Approach</div>
+        <div class="point"><i class="fa fa-check"></i> Trusted Professionals</div>
+        <div class="point"><i class="fa fa-check"></i> Reliable Project Delivery</div>
+      </div>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="why-right">
+      <div class="why-image-wrap">
+        <img src="./img/asma 1024 x 500.png" alt="Project Image">
+        
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CTA BAR -->
+  <div class="why-cta">
+    <h3>Ready to start your project?</h3>
+
+    <div class="cta-buttons">
+      <a href="contac us.html" class="btn-yellow right-btn">Call Now</a>
+   
+      <!-- <a href="#" class="btn-outline"></a> -->
+    </div>
+
+    <a href="projects.html" class="btn-yellow right-btn">View All Projects</a>
+  </div>
+</section>
+
+
+
+    <!-- footer -->
+
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Company Info -->
+    <div class="footer-col">
+      <img src="./img/bs_logo.png" alt="Blue Summit Logo" class="footer-logo">
+      <p>
+        Blue Summit is a trusted construction company delivering high-quality
+        residential and commercial projects with integrity and excellence.
+      </p>
+    </div>
+
+        <!-- Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contac us.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+       <li>Civil Construction</li>
+        <li>Consultancy</li>
+        <li>Renovation & Fit-Out</li>
+        <li>Project Management</li>
+        <li>Interior Design</li>
+        <li>Smart Home Solutions</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <p><i class="fa fa-map-marker-alt"></i> Oman</p>
+      <p><i class="fa fa-phone"></i> +968 0000 0000</p>
+      <p><i class="fa fa-envelope"></i> info@bluesummit.com</p>
+
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>© 2026 Blue Summit. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Scripts -->
+  <script src="./script/script.js"></script>
+
+
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const slides = document.querySelectorAll(".hero .slide");
+  const dots = document.querySelectorAll(".hero-dots .dot");
+
+  function goToSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove("active");
+      dots[i].classList.remove("active");
+    });
+
+    slides[index].classList.add("active");
+    dots[index].classList.add("active");
+  }
+
+  // ✅ Make function available for onclick
+  window.goToSlide = goToSlide;
+
+});
+</script>
+
+  <script>
+  // Select all navigation links
+  const navLinks = document.querySelectorAll('nav ul li a');
+  const sections = document.querySelectorAll('section');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120; // adjust for header height
+      const sectionHeight = section.clientHeight;
+
+      if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').includes(current)) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

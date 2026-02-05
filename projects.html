@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Blue Summit.">
+  <title>Blue Summit</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./img/favicon.ico" />
+</head>
+<body>
+  <script>
+  // Wait for the entire page (including images) to load
+  window.addEventListener("load", () => {
+    const preloader = document.getElementById("preloader");
+    preloader.classList.add("fade-out");
+    setTimeout(() => preloader.style.display = "none", 600); // remove after fade
+  });
+</script>
+
+  <!-- Preloader -->
+<div id="preloader">
+  <div class="loader-content">
+    <img src="/img/bs_logo.png" alt="Loading..." class="loader-logo">
+    <div class="spinner"></div>
+  </div>
+</div>
+
+ <!-- Header -->
+<header>
+  <div class="container">
+    <div class="logo">
+      <img src="./img/bs_logo.png" alt="Blue Summit Logo" />
+    </div>
+
+    <!-- Hamburger Icon (for mobile) -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Navigation -->
+   <nav id="navbar">
+  <ul>
+    <li><a href="index.html" class="active">HOME</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="index.html#services">SERVICES</a></li>
+    <li><a href="contac us.html">CONTACT US</a></li>
+  </ul>
+</nav>
+
+  </div>
+</header>
+
+<!-- Small Script for Toggle -->
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar');
+
+  menuToggle.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+    menuToggle.classList.toggle('open');
+  });
+</script>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="hero-content">
+    <h1>Our Projects</h1>
+    <p>Delivering quality construction across residential & commercial sectors</p>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section class="projects">
+  <div class="container">
+
+    <div class="projects-grid">
+
+      <!-- Project Card -->
+      <div class="project-card">
+        <img src="./img/asma 1024 x 500.png" alt="Project 1">
+        <div class="project-overlay">
+          <h3>Residential and Commercial Appartments </h3>
+          <p>Luxury Appartment construction</p>
+          <a href="#" class="btn-yellow">View Details</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="./img/private_Villa Construction 2.jpeg" alt="Project 2">
+        <div class="project-overlay">
+          <h3>Private Villa Construction </h3>
+          <p>Modern private villa</p>
+          <a href="#" class="btn-yellow">View Details</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="./img/private_Villa Construction.jpeg" alt="Project 3">
+        <div class="project-overlay">
+          <h3>Private Villa Construction </h3>
+          <p>Modern private villa</p>
+          <a href="#" class="btn-yellow">View Details</a>
+        </div>
+      </div>
+
+      <!-- <div class="project-card">
+        <img src="./img/project4.jpg" alt="Project 4">
+        <div class="project-overlay">
+          <h3>Retail Fit-Out</h3>
+          <p>Interior renovation & finishing</p>
+          <a href="#" class="btn-yellow">View Details</a>
+        </div>
+      </div> -->
+
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- footer -->
+
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Company Info -->
+    <div class="footer-col">
+      <img src="./img/bs_logo.png" alt="Blue Summit Logo" class="footer-logo">
+      <p>
+        Blue Summit is a trusted construction company delivering high-quality
+        residential and commercial projects with integrity and excellence.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contac us.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+       <li>Civil Construction</li>
+        <li>Consultancy</li>
+        <li>Renovation & Fit-Out</li>
+        <li>Project Management</li>
+        <li>Interior Design</li>
+        <li>Smart Home Solutions</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <p><i class="fa fa-map-marker-alt"></i> Oman</p>
+      <p><i class="fa fa-phone"></i> +968 0000 0000</p>
+      <p><i class="fa fa-envelope"></i> info@bluesummit.com</p>
+
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>© 2026 Blue Summit. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src="./script/script.js"></script>
+
+
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const slides = document.querySelectorAll(".hero .slide");
+  const dots = document.querySelectorAll(".hero-dots .dot");
+
+  function goToSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove("active");
+      dots[i].classList.remove("active");
+    });
+
+    slides[index].classList.add("active");
+    dots[index].classList.add("active");
+  }
+
+  // ✅ Make function available for onclick
+  window.goToSlide = goToSlide;
+
+});
+</script>
+
+  <script>
+  // Select all navigation links
+  const navLinks = document.querySelectorAll('nav ul li a');
+  const sections = document.querySelectorAll('section');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120; // adjust for header height
+      const sectionHeight = section.clientHeight;
+
+      if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').includes(current)) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
